@@ -10,8 +10,8 @@
 </head>
 <body>
     <div id="app">
-        <ul class="container-email">
-            <li>{{email}}</li>
+        <ul v-if="email.length == 10" class="container-email">
+            <li v-for="element in email">{{element}}</li>
         </ul>
     </div>
     <script src="js/script.js"></script>
